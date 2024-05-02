@@ -1,0 +1,55 @@
+body {
+    background-color: #242424;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    color: #c8c8c8;
+}
+
+
+button {
+    background-color: transparent;
+    border-style: solid;
+    border-color: #c8c8c8;
+    border-radius: 20px;
+    padding: 20px;
+    color: #c8c8c8;
+    transition-duration: 200ms;
+}
+
+button:hover {
+    background-color: #505050;
+}
+
+button:active {
+    background-color: #303030;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.movie-card {
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #c8c8c8;
+    border-width: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: #c8c8c8;
+    margin: 40px;
+}
+
+.movie-title {
+    color: black;
+    text-align: center;
+}
+
+.movie-credits {
+    color: black;
+}
