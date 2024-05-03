@@ -1,3 +1,8 @@
+html {
+    --cursor-style: auto;
+    cursor: var(--cursor-style);
+}
+
 body {
     background-color: #242424;
     font-family: "Roboto", sans-serif;
@@ -16,6 +21,7 @@ button {
     padding: 20px;
     color: #c8c8c8;
     transition-duration: 200ms;
+    cursor: var(--cursor-style);
 }
 
 button:hover {

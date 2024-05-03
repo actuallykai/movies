@@ -2,6 +2,8 @@ var haveFetchedMovies = false;
 
 var movieDataContainer = document.querySelector(".movie-data-container");
 
+var cssHtml = document.querySelector("html");
+
 function onMoviesRequested() {
     if (haveFetchedMovies) {
         return;
@@ -29,8 +31,12 @@ function generateMovieCard(title, director, producer, releaseDate) {
 }
 
 async function fetchMovies() {
+    cssHtml.style.setProperty("--cursor-style", "progress");
+
     const response = await fetch("https://swapi.dev/api/films?format=json");
     const moviesData = await response.json();
+
+    cssHtml.style.setProperty("--cursor-style", "auto");
 
     const moviesDataStripped = moviesData.results;
     
